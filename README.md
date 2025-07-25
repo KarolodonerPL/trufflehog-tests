@@ -10,10 +10,12 @@ docker run --rm -it -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github --or
 
 
 Run:
+
 git:
-trufflehog git https://github.com/trufflesecurity/trufflehog-tests --results=verified,unknown
+trufflehog git https://github.com/KarolodonerPL/trufflehog-tests.git --results=verified,unknown
+
 local:
-trufflehog filesystem ./trufflehog-tests  --json > output.json
+trufflehog filesystem ./PycharmProjects/trufflehog-tests  --json > output.json
 
 Output:
 json, cvs
