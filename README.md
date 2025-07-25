@@ -31,3 +31,12 @@ Test Case:
  
 
 Strategy to test bulk scans
+1) Create a scan job (for example in Jenkins or bitbucket)
+2) Get list of all repo - or have it created?
+3) Run TruffleHog  for each repo
+4) Send Jsons to db
+5) Check db storage: schema should contain: Repo, location, verified
+6) Send email to selected person when any problem find and add info in run
+7) Performance testing: check bulk scan on big repos and big repos number
+8) Compare scan to previes one
+
