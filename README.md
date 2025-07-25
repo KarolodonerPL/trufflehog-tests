@@ -26,10 +26,11 @@ Test Case:
  
  1) When: Scan empty repo                     Then: No Secret found
  2) When: Scan Repo with secrets              Then: Secrates are detected
- 3) When: scan with flag  --only-verified     Then: Verified secrets present in report
- 4) When: Scan with  json file output         Then: file with json respons present
- 5) When: Scan git repo online                Then: Secrets in repo history are found if exist
- 5) When: run on non existing folder          Then: Error is present - no such folder
+ 3) When: Scan file with secrats              Then: Secrates are detected        
+ 4) When: scan with flag  --only-verified     Then: Verified secrets present in report
+ 5) When: Scan with  json file output         Then: file with json respons present
+ 6) When: Scan git repo online                Then: Secrets in repo history are found if exist
+ 7) When: run on non existing folder          Then: Error is present - no such folder
  
 
 Strategy to test bulk scans
